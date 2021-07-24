@@ -1,0 +1,24 @@
+{
+  "name": "vue-microfrontends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "packages:install": "npm-run-all --serial install:*",
+    "packages:start": "npm-run-all --parallel start:*",
+    "install:root": "cd packages/root-html-file && yarn",
+    "start:root": "cd packages/root-html-file && yarn serve",
+    "install:navbar": "cd packages/navbar && yarn",
+    "start:navbar": "cd packages/navbar && yarn serve",
+    "install:app1": "cd packages/app1 && yarn",
+    "start:app1": "cd packages/app1 && yarn serve",
+    "install:app2": "cd packages/app2 && yarn",
+    "start:app2": "cd packages/app2 && yarn serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

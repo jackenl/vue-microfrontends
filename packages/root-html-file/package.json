@@ -1,0 +1,18 @@
+{
+  "name": "root-html-file",
+  "scripts": {
+    "serve": "webpack serve"
+  },
+  "devDependencies": {
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^5.3.2",
+    "serve": "^11.1.0",
+    "webpack": "^5.42.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "import-html-entry": "^1.11.1",
+    "single-spa": "^5.9.3"
+  }
+}
